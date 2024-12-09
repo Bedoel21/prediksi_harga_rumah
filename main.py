@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import os  
+import os
 
 # Judul Aplikasi
 st.title("Prediksi Harga Rumah")
@@ -14,23 +14,22 @@ Selamat datang di aplikasi *Prediksi Harga Rumah*! Aplikasi ini menggunakan mode
 Masukkan data sesuai kriteria yang tersedia di bawah, dan temukan estimasi harga rumah Anda dengan cepat dan mudah!
 """)
 
-# Path model
-model_path = r"D:\tugas\semester 7\DeepLearning\Project_TA\housing_model.pkl"
+# Path relatif ke file model
+model_path = "housing_model.pkl"  # Pastikan file ini ada di direktori yang sama dengan main.py
 
 if not os.path.exists(model_path):
-    st.error(f"File model tidak ditemukan di: {model_path}. Pastikan jalur sudah benar.")
+    st.error(f"File model tidak ditemukan di: {model_path}. Pastikan file sudah diunggah ke direktori yang sesuai.")
     st.stop()
 
-# Menambahkan Debugging
+# Muat Model
 try:
-    # Muat Model
     model = joblib.load(model_path)
     st.success("Model berhasil dimuat!")
 except Exception as e:
     st.error(f"Error saat memuat model: {e}")
     st.stop()
 
-# Fungsi untuk Memasukkan Data Pengguna
+# Fungsi untuk mendapatkan input dari pengguna
 def get_user_input():
     try:
         ZN = st.number_input("Masukkan persentase lahan zonasi perumahan untuk lot besar (0-100):", min_value=0, max_value=100, step=1)
@@ -63,7 +62,6 @@ def get_user_input():
             'RAD': [RAD]
         })
         return user_data
-
     except Exception as e:
         st.error(f"Error saat menerima input pengguna: {e}")
         return None
