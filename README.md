@@ -4,3 +4,13 @@ Selamat datang di **Aplikasi Prediksi Harga Rumah**! Dengan memanfaatkan kekuata
 
 🎯 **Coba modelnya sekarang!**  
 Anda dapat langsung mencoba model prediksi ini melalui aplikasi web interaktif di [https://modelprediksihargarumah.streamlit.app/](https://modelprediksihargarumah.streamlit.app/). Masukkan data Anda dan temukan estimasi harga rumah dengan mudah!
+
+## 📂 Akses Repository dan Dokumentasi
+
+Kami menyediakan semua yang Anda butuhkan untuk memahami dan mengembangkan aplikasi ini lebih lanjut. Silakan eksplorasi melalui tautan berikut:  
+
+- 📑 **Laporan Lengkap**: [Dokumentasi dan laporan pengembangan aplikasi](https://drive.google.com/drive/folders/1BZkvOipYwl4GLVptp2Jh5Y2NVJIx4TPE?usp=sharing) yang mencakup detail teknis dan analisis mendalam.  
+- 🤖 **Model AI**: [Notebook Google Colab](https://colab.research.google.com/drive/1d0sV5AawBoh9U5oI7Mxskyk1WL0mtv8T?usp=sharing#scrollTo=kbime-fHFnrV) untuk melihat, menjalankan, atau memodifikasi model prediksi yang digunakan.  
+- 🖥️ **Source Code**: [Repository GitHub](https://github.com/Bedoel21/prediksi_harga_rumah) berisi seluruh source code aplikasi, sehingga Anda dapat mempelajari atau berkontribusi pada proyek ini.
+
+
